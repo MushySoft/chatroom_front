@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &Text{
+        font-size: 64px;
+        font-weight: 500;
+        margin-bottom: 5vh;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 72px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+    &Button{
+        width: 15vw;
+        height: 10vh;
+        border: 1px solid #747775;
+        border-radius: 20px;
+        background-color: #ffffff;
+        cursor: pointer;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 40vw;
+            height: 8vh
+        }
+        @media screen and (max-width: 768px) {
+            width: 45vw;
+            height: 7vh
+        }
+        &Text{
+            font-size: 16px;
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 28px;
+            }
+        }
+    }
+}

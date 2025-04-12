@@ -1,0 +1,66 @@
+.button{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    background-color: white;
+    border: 1% solid #747775;
+    border-radius: 6vw;
+    box-sizing: border-box;
+    color: #1f1f1f;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+    vertical-align: middle;
+    white-space: nowrap;
+    min-width: min-content;
+    display: inline-flex;
+    align-items: center;
+    &State{
+        -webkit-transition: opacity .218s;
+        transition: opacity .218s;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &Wrapper{
+        -webkit-align-items: center;
+        align-items: center;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 100%;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+    }
+    &Icon{
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3%;
+        min-width: 20px;
+    }
+    &Text{
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        font-size: 2rem;
+        font-family: 'Roboto', arial, sans-serif;
+        font-weight: 550;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
+}
